@@ -2,6 +2,8 @@
 
 # author: plpcm
 
+cd ~/git/daydaycommit/
+
 #设置用户名
 git config --global user.name "plpcm" 
 #设置邮箱
@@ -13,7 +15,8 @@ echo "My scheduled tasks are completed" >> daily_data.txt
 #git status -s
 git status
 
-git add daily_data.txt
+#git add daily_data.txt
+git add .
 git commit -m "`date +'%F %T'`"
 git push
 
